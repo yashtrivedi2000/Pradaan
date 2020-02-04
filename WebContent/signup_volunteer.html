@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>sign up page</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery.min.js"></script>
+<link rel="stylesheet" href="css/lightbox.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+.Gender {
+	text-align: center;
+	line-height: 0.5px;
+}
+
+.TOH {
+	text-align: center;
+}
+</style>
+<script type="application/x-javascript">
+	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+</script>
+</head>
+<body>
+	<!---->
+	<div class="header">
+		<div class="container">
+			<div class="header-top">
+				<div class="logo">
+					<a href="index.php">
+						<h1>
+							Donate <span>humanity</span>
+						</h1>
+					</a>
+				</div>
+				<script src="js/classie.js"></script>
+				<script src="js/uisearch.js"></script>
+				<script>
+					new UISearch(document.getElementById('sb-search'));
+				</script>
+			</div>
+			<div class="top-menu">
+				<span class="menu">MENU</span>
+				<ul>
+					<li><a href="index.php"><span
+							class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+					<li><a href="profile.php"><span
+							class="glyphicon glyphicon-leaf" aria-hidden="true"></span>profile</a></li>
+					<li><a href="login.php"><span
+							class="glyphicon glyphicon-user" aria-hidden="true"></span>login</a>
+					</li>
+					<li class="active"><a href="signup.php"><span
+							class="glyphicon glyphicon-th" aria-hidden="true"></span>signup</a></li>
+					<li><a href="contact.php"><span
+							class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Contact</a></li>
+				</ul>
+			</div>
+			<script>
+				$("span.menu").click(function() {
+					$(".top-menu ul").slideToggle("slow", function() {
+					});
+				});
+			</script>
+			<!-- script-for-menu -->
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="contact">
+		<div class="container"></div>
+		<div class="contact-form">
+			<div class="container">
+				<h3 class="hdng">sign up</h3>
+			</div>
+		</div>
+	</div>
+	<div style="text-align: center">
+		<form action="VolunteerReg" method="POST">
+			<input type="text" placeholder="name" name="name" maxlength="45"
+				style="width: 70%; height: 47px; line-height: 47px; text-align: center;"
+				required /><br /> <br />
+			<div class="Gender">
+				<h5>Gender</h5>
+				<input type="radio" name="gender" value="Male"> Male <input
+					type="radio" name="gender" value="Female"> Female <input
+					type="radio" name="gender" value="Other"> Other
+			</div>
+			<br /> <input type="date" placeholder="dob" name="DOB"
+				style="width: 70%; height: 47px; line-height: 47px; text-align: center;"
+				required /><br /> <br /> <input type="text"
+				placeholder="your address" maxlength="45" name="address"
+				style="width: 70%; height: 47px; line-height: 47px; text-align: center;"
+				required /><br />
+			<br /> <input type="text" placeholder=" city" maxlength="45"
+				name="city"
+				style="width: 70%; height: 47px; line-height: 47px; text-align: center;"
+				required /><br /></br> <input type="number" placeholder=" pin code"
+				maxlength="45" name="pin_code"
+				style="width: 70%; height: 47px; line-height: 47px; text-align: center;"
+				required /><br /></br> <input type="text" placeholder="email id"
+				maxlength="45" name="email_id"
+				style="width: 70%; height: 47px; line-height: 47px; text-align: center;"
+				required /><br />
+			<br /> <input type="password" placeholder="password" name="pass"
+				maxlength="20"
+				style="width: 70%; height: 47px; line-height: 47px; text-align: center;"
+				required /><br />
+			<br /> <input type="number" placeholder="contact number" name="cno"
+				maxlength="45"
+				style="width: 70%; height: 47px; line-height: 47px; text-align: center;"
+				required /><br />
+			<br /> <br /> <label for="avl">Available time</label> <input
+				type="time" placeholder="Available starttime" id="avl"
+				name="start_time"
+				style="width: 31.5%; height: 47px; line-height: 47px; text-align: center;"
+				required /> to <input type="time" placeholder="Available endtime"
+				id="end" name="end_time"
+				style="width: 31.5%; height: 47px; line-height: 47px; text-align: center;"
+				required /><br />
+			<br />
+			<h2>How you want to help?</h2>
+			<br>
+			<div class="TOH">
+				<input type="radio" name="type_of_help" value="Independent"
+					style="text-align: center" required /> <b
+					title="*Give your precious time in transportation">Independently*
+				</b> <a> </a><input type="radio" name="type_of_help" value="NGOs"
+					style="text-align: center" required /> <b>Join NGO</b> <br />
+			</div>
+			<br /> <input type="submit" value="signup"
+				style="background-color: #FF008C; width: 120px; border: none; color: white; height: 30px" /><br />
+			<br /> <br /> <br /> <br /> <br /> <br />
+		</form>
+	</div>
+</body>
+
+</html>
