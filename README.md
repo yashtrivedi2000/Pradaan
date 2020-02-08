@@ -3,7 +3,7 @@
  
  It has 3 roles: 1)Donator 2)Volunteer 3) NGO
  
- The web app connection NGO and Donator. Donator can choose from thee list what to donate and can donate to perticular NGO.
+ The web app connection NGO and Donator. Donator can choose from thee list what to donate and can donate to particular NGO.
  
  ### Requirements:
  
