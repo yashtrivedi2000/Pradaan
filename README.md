@@ -7,7 +7,7 @@
  
  ### Requirements:
  
- JDK and JRE
+ JDK and JRE  
  Eclipse IDE(preferable)
  
  ### How to run?
