@@ -2,9 +2,9 @@
  Java Web App for donation
  
  It has 3 roles:  
-    &nbsp1)Donator  
-    &nbsp2)Volunteer  
-    &nbsp3)NGO
+    &nbsp;1)Donator  
+    &nbsp;2)Volunteer  
+    &nbsp;3)NGO
  
  The web app connection NGO and Donator. Donator can choose from thee list what to donate and can donate to particular NGO.
  
